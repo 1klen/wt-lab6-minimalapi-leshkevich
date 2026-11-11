@@ -35,7 +35,7 @@ app.MapGet("/api/cars", (string? search) =>
 
 app.MapGet("/api/cars/{id}", (int id) =>
 {
-    var car = CarStore.Cars.FirstOrDefault(x => x.Id == id);
+    var car = CarStore.Cars.FirstOrDefault(x => x.Id == id); // 1
     if (car == null) return Results.NotFound();
     return Results.Ok(car);
 });
