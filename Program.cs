@@ -4,7 +4,7 @@ using wt_lab6_minimalapi_leshkevich.Models;
 var builder = WebApplication.CreateBuilder(args);
 
 // Регистрируем генератор Swagger
-builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddEndpointsApiExplorer(); // swag
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
